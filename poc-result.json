@@ -1,0 +1,17 @@
+{
+  "poc": "Bull MCP bull_fund_tokens permit path — permit value 1,000,000 never checked vs agreed sellAmount 100; leftover allowance drained via attacker deal #2",
+  "mcp": "bull-mcp.mjs (verbatim copy of https://www.bull.family/mcp/bull-mcp.mjs, sha256 29110f7c…75b18)",
+  "escrow": "BullEscrow.sol (verbatim source, verified on Sourcify chain 4663)",
+  "token": "MockERC20Permit (minimal EIP-2612, in chain/src/Mocks.sol)",
+  "agreedSellAmount": "100",
+  "permitValueSigned": "1000000",
+  "deal1Id": "1",
+  "deal2SellAmount": "999900",
+  "deal2StatusSettled": true,
+  "victimTokenBalanceBefore": "1000000",
+  "victimTokenBalanceAfter": "0",
+  "attackerTokenBalanceAfter": "999900",
+  "buyerTokenBalanceAfter": "100",
+  "k26_signedBodyHashIsUnrelatedString": true,
+  "exploited": true
+}
